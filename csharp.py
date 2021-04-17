@@ -83,7 +83,7 @@ class CsharpBuildCommand(sublime_plugin.WindowCommand):
             stderr=subprocess.STDOUT,
             cwd=working_dir
         )
-        self.window.find_output_panel("exec").set_syntax_file("Packages/User/csharp.sublime-syntax")
+        self.window.find_output_panel("exec").set_syntax_file("Packages/CSharpUnitTests/csharp.sublime-syntax")
         self.killed = False
 
         threading.Thread(
